@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "fd077a94-aca6-43f2-9230-f2165f2d4ff0",
+		"name": "AtmLocationCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetLocations by city name positive case",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/atm/v1/locations/Terwolde",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"atm",
+						"v1",
+						"locations",
+						"Terwolde"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get atm locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/atm/v1/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"atm",
+						"v1",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getlocations by city name negative case",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/atm/v1/locations/hcchgh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"atm",
+						"v1",
+						"locations",
+						"hcchgh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
